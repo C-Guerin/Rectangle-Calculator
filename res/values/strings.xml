@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">RectangleCalculator</string>
+    <string name="StrRectHeight">Enter rectangle height.</string>
+    <string name="enter_rectangle_width">Enter rectangle width.</string>
+    <string name="perimeter">Perimeter</string>
+    <string name="area">Area</string>
+    <string name="calculate">Calculate</string>
+    <string name="Hint_Width">100.5</string>
+    <string name="Hint_Height">120.5</string>
+</resources>

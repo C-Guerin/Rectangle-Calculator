@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/TxtEnterRectHeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:paddingStart="150dp"
+        android:paddingEnd="0dp"
+        android:paddingTop="10dp"
+        android:text="@string/StrRectHeight"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_width="wrap_content"
+    />
+
+    <EditText
+        android:id="@+id/InputRectHeight"
+        android:layout_width="55dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/TxtEnterRectHeight"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@id/TxtEnterRectHeight"
+        android:hint="@string/Hint_Height"
+        android:inputType="numberDecimal"
+        />
+
+
+    <TextView
+        android:id="@+id/TextEnterRectWidth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:fontFamily="sans-serif"
+        android:layout_marginStart="150dp"
+        android:text="@string/enter_rectangle_width"
+        android:textSize="22sp" />
+
+    <EditText
+        android:id="@+id/InputRectWidth"
+        android:layout_width="55dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="40dp"
+        android:layout_toEndOf="@+id/TextEnterRectWidth"
+        android:hint="@string/Hint_Width"
+        android:inputType="numberDecimal" />
+
+
+    <Button
+        android:id="@+id/BtnCalculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="240dp"
+        android:layout_marginTop="100dp"
+        android:onClick="Calculate"
+        android:text="@string/calculate" />
+
+    <TextView
+        android:id="@+id/TextAreaText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="220dp"
+        android:fontFamily="sans-serif"
+        android:paddingTop="160dp"
+        android:text="@string/area"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/TextAreaOutput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_toEndOf="@+id/TextAreaText"
+        android:paddingTop="160dp"
+        android:text=""
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/TextPerimeterText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="168dp"
+        android:layout_marginTop="190dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/perimeter"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/TextPerimeterOutput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="190dp"
+        android:layout_toEndOf="@+id/TextPerimeterText"
+        android:text=""
+        android:textSize="22sp" />
+
+</RelativeLayout>
